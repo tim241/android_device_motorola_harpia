@@ -14,9 +14,6 @@
 # limitations under the License.
 DEVICE_PATH := device/motorola/harpia
 
-# SEpolicy
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
 include device/motorola/msm8916-common/BoardConfigCommon.mk
 
 -include vendor/motorola/harpia/BoardConfigVendor.mk
@@ -44,3 +41,7 @@ TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+
+# SEpolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
