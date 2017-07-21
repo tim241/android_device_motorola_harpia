@@ -12,12 +12,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+DEVICE_PATH := device/motorola/harpia
+
+# SEpolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 include device/motorola/msm8916-common/BoardConfigCommon.mk
 
 -include vendor/motorola/harpia/BoardConfigVendor.mk
-
-DEVICE_PATH := device/motorola/harpia
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := harpia,harpia_retail
